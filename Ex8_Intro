@@ -1,0 +1,29 @@
+;; Exercise 8 Write a program that clears R3 and then swaps the contents of R1 and R2 (using the now-empty R3).
+
+1##### ;; jump to R1
+1111111### ;; base case, move to next set of instructions
+11### ;; jump to add1 case
+111### ;; jump to add# case
+111# ;; add1 to reg3
+11111#### ;; Recursive call
+111## ;; add# to reg3
+1111111#### ;; Recursive call
+
+11##### ;; jump to R2
+1111111### ;; base case
+11### ;; jump to add1 case
+111### ;; jump to add# case
+1# ;; add1 to reg1
+11111#### ;; Recursive call
+1## ;; add# to reg1
+1111111#### ;; Recursive call
+
+111##### ;; jump back to R3
+1111111### ;; base case
+11### ;; jump to add1 case
+111### ;; jump to add# case
+11# ;; add1 to reg2
+11111#### ;; Recursive call
+11## ;; add# to reg2
+1111111#### ;; Recursive call
+
