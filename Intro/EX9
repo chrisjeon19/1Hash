@@ -1,0 +1,21 @@
+;; Exercise 9 Write a program p that adds a 1 at the beginning of R1, assuming that R2 is empty.
+;; Of course, you may use R2!
+
+1##### ; cases reg1
+1111111### ;; base case, jump to next set of instructions
+11### ; jump to add1 case
+111### ; jump to add# case
+11# ;; add1 to r2
+11111#### ; recursive call
+11## ;; add# to r2
+1111111#### ; recursive call
+
+1# ; add1 to front of r1
+11##### ;; cases reg2
+1111111### ; base case, finish
+11### ; jump to add1 case
+111### ; jump to add# case
+1# ; add1 to r1
+11111#### ; recurisve call
+1## ; add# to r1
+1111111#### ; recursive call
