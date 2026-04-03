@@ -1,0 +1,25 @@
+;; Successor
+
+1##### ;; 1. - jump to r1
+1111111111111### ;; 2. - jump 13 instr. 
+1111111111### ;; 3. - jump 10 instr.
+11# ;; 4. - add1 to r2
+1##### ;; 5. jump to r1
+111111### ;; 6. jump 6 instr.
+111### ;; 7. jump 3 instr.
+11## ;; 8. add# to r2
+1111#### ;; 9. back 4 instr.
+11# ;; 10. add1 to r2
+111111#### ;; 11. back 6 instr.
+1111### ;; 12. jump 4 instr.
+11## ;; 13. add# to r2
+1111111111111#### ;; 14. back 13 instr.
+11# ;; 15. add1 to r2
+
+11##### ;; 16. jump to r2
+111111### ;; 17. jump 6 instr.
+111### ;; 18. jump 3 instr.
+1## ;; 19. add# to r1
+1111#### ;; 20. back 4 instr.
+1# ;; 21. add1 to r1
+111111#### ;; 22. back 6 instr.
