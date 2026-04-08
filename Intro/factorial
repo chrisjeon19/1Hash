@@ -6,6 +6,14 @@
 ;;        a = a * i
 ;;    return a
 
+R1  = working register and final answer
+R2  = working register
+R3–R7 = scratch
+R8  = saved n
+R9  = counter i
+R10 = result so far...
+R11 = scratch for succ on R9
+
 ;; setup  (clear r8) 
 11111111##### 
 111### 
