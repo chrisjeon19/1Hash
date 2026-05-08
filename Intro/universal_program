@@ -3,13 +3,15 @@
 
 1#####
 11111###
-11### ;;  jump to write1 case
+111### ;;  jump to write1 case
+111## ;; write# to r3
 111### ;; jump to 2nd cases for #'s
 111# ;; write1 to r3
 11111##### 
 
+
 1#####
-1...###
-1...###
+1..### (base case, no more instructions, so jump
+111###
 111## ;; write# to r3
 1111####
