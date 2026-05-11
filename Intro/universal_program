@@ -21,3 +21,55 @@
 1# ; add1 back to r1
 ;; move r9 to back r1
 111111111#####111111###111###1##1111####1#111111####
+
+
+
+
+
+; for running r3's instruction
+; WIP, WORK ON JUMP INSTRUCTION 
+111#####
+1...### ;; jump
+11### ;; jump to r4 case
+1...### ;; halt (can't have a # as an instruction)
+
+; REG4 case
+111#####
+111### ;; jump to phase2 (counting #'s)
+1...### ;; jump to R5 case
+1### ;; jump to phase2 (counting #'s)
+
+;; R4 PHASE2
+
+; WRITE1
+111#####
+111### ;; jump to write1 instr.
+1...### ;; halt (can't have 1 as an instruction)
+111### ;; jump to WRITE# case
+1111# ;; WRITE1
+1...### ;; halt(for now)
+
+; WRITE#
+111#####
+111### ;; jump to write# case
+1...### ;; halt (can't have 1 as an instruction)
+1...### ;; jump to JUMP case
+1111## ;; WRITE#
+1...### ;; halt (for now)
+
+; JUMP
+1111111#####
+1...### ;; jump to write1
+1...### ;; halt (can't have 1 as an instruction)
+
+
+11111#####
+1...###
+1...### ;; jump to r6 case
+1...### ;; move to phase2 (#'s)
+
+111111#####
+1...###
+1...### ;; halt (can't use more than 3 registers)
+1...### ;; move to phase2(#'s)
+1
