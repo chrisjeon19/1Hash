@@ -57,19 +57,19 @@
 1111## ;; WRITE#
 1...### ;; halt (for now)
 
-; JUMP
+; JUMP (WIP)
 1111111#####
 1...### ;; jump to write1
 1...### ;; halt (can't have 1 as an instruction)
 
-
-11111#####
+;REG5 case
+111#####
 1...###
 1...### ;; jump to r6 case
 1...### ;; move to phase2 (#'s)
 
-111111#####
+; REG6 CASE
+111#####
 1...###
-1...### ;; halt (can't use more than 3 registers)
+1...### 
 1...### ;; move to phase2(#'s)
-1
